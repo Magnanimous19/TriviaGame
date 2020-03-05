@@ -1,14 +1,26 @@
 body {
-    font - family: sans-serif;
+    font-family: sans-serif;
+    font-size: 18px;
+
+}
+
+#button {
+    background:lightsalmon;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
 }
 
 #quiz {
     margin-left: 10px;
     background: #d2def2;
     padding: 10px 20px 10px 20px;
-    width: 400px;
+    width: 800px;
     border-radius: 10px;
    }
+
+
 
 /*#start_quiz {
     visibility: hidden;

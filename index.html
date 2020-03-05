@@ -6,30 +6,73 @@
 
     <meta charset="UTF-8">
     <title>Trivia Game</title>    
+
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type = "text/javascript" src = "assets/javascript/app.js"></script>
 
     </head>
 
   <body>
 
+    <h1><span>Totally Trivial Trivia!</span></h1>
+
+    <form id = "quiz" name = "quiz">
+
+  <!--<input id = "button" type = "button" value = "Start the Quiz" onclick = "start_quiz();"> -->
+
+  <div id="buttons">
+    <button id="start_quiz"><h2>Start the Quiz</h2></button>
+  </div>
+
+  <div id="show-number"></div>
 
 
+  <!--//////////////////////Questions//////////////////////////-->
+
+  <p>"Which of the following is not a Nissan car?"</p>
+  <input type = "radio" id = "mc" name = "question1" value = "Silvia"> Silvia<br>
+  <input type = "radio" id = "mc" name = "question1" value = "Cefiro"> Cefiro<br> 
+  <input type = "radio" id = "mc" name = "question1" value = "Skyline"> Skyline<br> 
+  <input type = "radio" id = "mc" name = "question1" value = "Chaser"> Chaser<br> 
+
+  <p>"What is the capital of Florida?"</p>
+  <input type = "radio" id = "mc" name = "question2" value = "Tallahassee"> Tallahassee<br>
+  <input type = "radio" id = "mc" name = "question2" value = "Jackson"> Jackson<br> 
+  <input type = "radio" id = "mc" name = "question2" value = "Augusta"> Augusta<br> 
+  <input type = "radio" id = "mc" name = "question2" value = "Boise"> Boise<br> 
+
+  <p>"Which of the following is not in the rainbow?"</p>
+  <input type = "radio" id = "mc" name = "question3" value = "red"> red<br>
+  <input type = "radio" id = "mc" name = "question3" value = "white"> white<br> 
+  <input type = "radio" id = "mc" name = "question3" value = "blue"> blue<br> 
+  <input type = "radio" id = "mc" name = "question3" value = "green"> green<br> 
+
+  <p>"Which of the following is the tallest building in the world?"</p>
+  <input type = "radio" id = "mc" name = "question4" value = "Burj Khalifia"> Burj Khalifia<br>
+  <input type = "radio" id = "mc" name = "question4" value = "Lotte Tower"> Lotte Tower<br> 
+  <input type = "radio" id = "mc" name = "question4" value = "Goldin Finance"> Goldin Finance<br> 
+  <input type = "radio" id = "mc" name = "question4" value = "Shanghai Tower"> Shanghai Tower<br> 
+
+  <br>
+
+<!--/////////////////////// submit button//////////////////////////////////-->
+  <input id = "button" type = "button" value = "Submit" onclick = "check();">
+
+</form>
 
 
+<!--//////////////////////////after the submit button is pressed//////////////-->
+<div id = "after_submit">
+<p id = "number_correct"> </p>
 
-
-
-
-
-<!--  CDN for javascript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type = "text/javascript" src = "assets/javascript/app.js"></script>
-
-  </body>
-
-
-
-
-
+</div>
+  
+</body>
 
 </html>
