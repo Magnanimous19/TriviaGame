@@ -1,7 +1,3 @@
-$(document).ready(function()   {
-
-})
-
 
 //---------------------------  Submit button function ----------------------
 function check() {
@@ -34,40 +30,40 @@ alert("You got " + correct + " correct.");
 
 
 ///------------------Timer Variable ----------------------------
-var number = 30;
-var intervalId;
+//var number = 30;
+//var intervalId;
 
 
 
-$("#start_quiz").on("click", start_quiz);
+//$("#start_quiz").on("click", start_quiz);
 
 
 //---------------------------- Timer and Interval ---------------------
-function start_quiz () { 
+//function start_quiz () { 
 
-    clearInterval(intervalId);
-    intervalId = setInterval(start, 1000);
+//    clearInterval(intervalId);
+//    intervalId = setInterval(start, 1000);
 
         //  Decrease number by one.
-        number--;
+ ///       number--;
 
         //  Show the number in the #show-number tag.
-      $("show_number").html("<h2>Time Remaining: " + number + "</h2>");
+//      $("show_number").html("<h2>Time Remaining: " + number + "</h2>");
     
         //  Once number hits zero...
-        if (number === 0) {
+ //       if (number === 0) {
 
         // stop once it hits 0
-        clearInterval(intervalId);        
+  //      clearInterval(intervalId);        
             
    //         Alert the user that time is up.
-          alert("Time Up!");
-        }
+ //         alert("Time Up!");
+  //      }
 
-}
+//}
 
 
-});
+//});
 
 
 
